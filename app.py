@@ -245,8 +245,8 @@ model = YOLO("yolov8_trained_model.pt")
 print("Model classes:", model.names)
 
 # Setup directories
-save_directory = "static\cheating_frames"
-log_file = "static\detection_log.csv"
+save_directory = "static/cheating_frames"
+log_file = "static/detection_log.csv"
 os.makedirs(save_directory, exist_ok=True)
 
 
