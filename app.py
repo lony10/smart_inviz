@@ -263,12 +263,6 @@ df = pd.read_csv(log_file)
 # Detection ID counter
 detection_id = len(df) + 1
 
-# Initialize webcam
-cap = cv2.VideoCapture(0)
-if not cap.isOpened():
-    print("Error: Could not open webcam.")
-    exit()
-
 @app.route('/process_frame', methods=['POST'])
 def process_frame():
     global detection_id, alerts
